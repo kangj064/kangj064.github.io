@@ -2,42 +2,42 @@ body {
   background-color: yellow;
 }
 
-
 @font-face {
   font-family: "Arbutus";
   src: url("font/Arbutus-Regular.woff") format("woff");
 }
+
 #aa {
   position: absolute;
-width: 106px;
-height: 85px;
-left: 793.49px;
-top: 317px;
+  width: 106px;
+  height: 85px;
+  left: 793.49px;
+  top: 317px;
 
-font-family: 'Arbutus';
-font-style: normal;
-font-weight: 400;
-font-size: 64px;
-line-height: 80px;
+  font-family: 'Arbutus';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
 
-color: #E00000;
+  color: #E00000;
 
-transform: rotate(21.74deg);
+  transform: rotate(21.74deg);
 }
 
 #bb {position: absolute;
-width: 105px;
-height: 64px;
-left: 454px;
-top: 364px;
+  width: 105px;
+  height: 64px;
+  left: 454px;
+  top: 364px;
 
-font-family: 'Arbutus';
-font-style: normal;
-font-weight: 400;
-font-size: 64px;
-line-height: 80px;
+  font-family: 'Arbutus';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
 
-color: #FFE600;
+  color: #FFE600;
 }
 
 #cc{
@@ -60,52 +60,70 @@ color: #FFE600;
 
 #dd{
   position: absolute;
-width: 143px;
-height: 110px;
-left: 766.34px;
-top: 188px;
+  width: 143px;
+  height: 110px;
+  left: 766.34px;
+  top: 188px;
 
-font-family: 'Arbutus';
-font-style: normal;
-font-weight: 400;
-font-size: 64px;
-line-height: 80px;
+  font-family: 'Arbutus';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
 
-color: #377FEC;
+  color: #377FEC;
 
-transform: rotate(26.65deg);
+  transform: rotate(26.65deg);
 }
 
 #ff{
   position: absolute;
-width: 176px;
-height: 125px;
-left: 806px;
-top: 458.27px;
+  width: 176px;
+  height: 125px;
+  left: 806px;
+  top: 458.27px;
 
-font-family: 'Arbutus';
-font-style: normal;
-font-weight: 400;
-font-size: 64px;
-line-height: 80px;
+  font-family: 'Arbutus';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
 
-color: #A4E7FC;
+  color: #A4E7FC;
 
-transform: rotate(-20.72deg);
+  transform: rotate(-20.72deg);
 }
 
 #gg{
   position: absolute;
-width: 78px;
-height: 74px;
-left: 892px;
-top: 232px;
+  width: 78px;
+  height: 74px;
+  left: 892px;
+  top: 232px;
 
-font-family: 'Arbutus';
-font-style: normal;
-font-weight: 400;
-font-size: 64px;
-line-height: 80px;
+  font-family: 'Arbutus';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
 
-color: #A466C1;
+
+
+  color: #A466C1;
+}
+
+#oo{
+  position: absolute;
+  width: 182px;
+  height: 82px;
+  left: 504px;
+  top: 235px;
+
+  font-family: 'Arbutus';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
+
+  color: #FF9191;
 }
