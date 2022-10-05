@@ -1,8 +1,70 @@
-body {
-  font-family: snas-serif;
-  padding: 20px;
+.title {
+  position: fixed;
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 40px;
+  font-weight: 800;
+  z-index: 999;
 }
 
-div{ padding: 10px; }
+.center {
+text-align:center;
+background-color:#333333;
+}
 
-div:not(:first-child) {margin-top: 10px; }
+.menu{
+	background-color:#006666;
+}
+
+#btn{
+	background-color:#ff9933;
+    	color:#fff;
+}
+
+.main-area {
+  background: liner-gradient(to left, #ff9966, #ff5e62);
+  width: 100%;
+  height: 100vh;
+}
+
+.circle {
+  position: absoulute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
+  overflow: hidden;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 1;
+    border-radius: 0;
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    opacity: 0%;
+    border-radius: 50%
+    transform: translateY(-1000px) roatate(720deg);
+  }
+}
+
+.circles div {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 200px
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  bottom: -150px;
+  animation: animate 25s liner infinite;
+}
+
+.circles div:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-dealy: 0s;
+}
