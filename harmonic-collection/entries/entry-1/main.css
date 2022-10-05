@@ -168,3 +168,40 @@ body {
 
   color: #FF9191;
 }
+
+#star{
+  position: absolute;
+  width: 178px;
+  height: 109px;
+  left: 648.62px;
+  top: 171px;
+
+  font-family: 'Arbutus';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
+
+  color: #BE8686;
+
+  transform: rotate(27.67deg);
+}
+
+#starleft{
+
+  position: absolute;
+  width: 178px;
+  height: 109px;
+  left: 587.49px;
+  top: 450.9px;
+
+  font-family: 'Arbutus';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
+
+  color: #BE8686;
+
+  transform: rotate(27.67deg);
+}
