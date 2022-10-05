@@ -1,1 +1,8 @@
+body {
+  font-family: snas-serif;
+  padding: 20px;
+}
 
+div{ padding: 10px; }
+
+div:not(:first-child) {margin-top: 10px; }
