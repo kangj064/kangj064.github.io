@@ -6,22 +6,46 @@ body {
   font-family: "Arbutus";
   src: url("font/Arbutus-Regular.woff") format("woff");
 }
+@font-face {
+  font-family: "Inter";
+  src: url("font/Inter-ExtraBold.woff") format("woff");
+}
 
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("font/Inter-Regular.woff") format("woff");
+}
+
+#font {
+  position: absolute;
+  width: 495px;
+  height: 120px;
+  left: 598px;
+  top: 665px;
+
+  font-family: 'Inter-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #000000;
+}
 
 #cereal{
-position: absolute;
-width: 419px;
-height: 164px;
-left: 25px;
-top: 25px;
+  position: absolute;
+  width: 419px;
+  height: 164px;
+  left: 25px;
+  top: 25px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 800;
-font-size: 64px;
-line-height: 77px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 77px;
 
-color: #000000;
+  color: #000000;
 }
 
 #aa {
