@@ -7,6 +7,23 @@ body {
   src: url("font/Arbutus-Regular.woff") format("woff");
 }
 
+
+#cereal{
+position: absolute;
+width: 419px;
+height: 164px;
+left: 25px;
+top: 25px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 64px;
+line-height: 77px;
+
+color: #000000;
+}
+
 #aa {
   position: absolute;
   width: 106px;
