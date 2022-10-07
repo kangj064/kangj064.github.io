@@ -1,6 +1,12 @@
 html {
- background: pink;
+  background: white;
 }
+
+h1 {
+  color: blue;
+}
+
+
 
 #nav{
   list-style:none;

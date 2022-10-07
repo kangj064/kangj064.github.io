@@ -1,26 +1,12 @@
 .title {
   position: fixed;
-  left: 50%
-  top: 50%
+  left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
+  color: #f00;
   font-size: 40px;
   font-weight: 800;
   z-index: 999;
-}
-
-.center {
-text-align:center;
-background-color:#333333;
-}
-
-.menu{
-	background-color:#006666;
-}
-
-#btn{
-	background-color:#ff9933;
-    	color:#fff;
 }
 
 .main-area {
