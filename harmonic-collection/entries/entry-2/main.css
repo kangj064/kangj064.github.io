@@ -1,13 +1,10 @@
-html {
- background: pink;
-}
 
 #nav{
   list-style:none;
   height:40px;
   padding:5px 1px;
   margin:0;
-  background:black;
+  background:#f29c74;
 }
 
 #nav li{ /*전체메뉴의 리스트에 대한스타일*/
