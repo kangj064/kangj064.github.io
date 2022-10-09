@@ -1,0 +1,19 @@
+#fruit{
+  position: absolute;
+  width: 169px;
+  height: 149px;
+  left: 43px;
+  top: 445px;
+  background: #F24C02;
+  border-radius: 50%
+}
+
+#fruit2{
+  position: absolute;
+  width: 166px;
+  height: 159px;
+  left: 386px;
+  top: 657px;
+  background: #F24C02;
+  border-radius: 50%
+}
