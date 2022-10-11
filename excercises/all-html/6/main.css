@@ -1,0 +1,36 @@
+
+#aa {
+  position: absolute;
+  width: 106px;
+  height: 85px;
+  left: 793.49px;
+  top: 317px;
+
+  font-family: 'Arbutus';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
+
+  color: #E00000;
+
+  transform: rotate(21.74deg);
+}
+
+#bb {
+  position: absolute;
+  width: 16px;
+  height: 85px;
+  left: 793.49px;
+  top: 317px;
+
+  font-family: 'Arbutus';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
+
+  color: #E00000;
+
+  transform: rotate(21.74deg);
+}

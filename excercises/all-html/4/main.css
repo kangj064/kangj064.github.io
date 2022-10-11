@@ -20,6 +20,40 @@ body{
 .container{
 
 }
+
+element.style {
+    text-align: left;
+    width: 200px;
+    font-size: 100%;
+}
+.infobox {
+    border: 1px solid #a2a9b1;
+    border-spacing: 3px;
+    background-color: #f8f9fa;
+    color: black;
+    margin: 0.5em 0 0.5em 1em;
+    padding: 0.2em;
+    float: right;
+    clear: right;
+    font-size: 88%;
+    line-height: 1.5em;
+    width: 22em;
+}
+
+aside {
+	background-color: gold;
+	float: left;
+	margin-right: 10px;
+	padding: 10px;
+	width: 100px;
+}
+
+div:nth-child(2) aside {
+	float: right;
+	margin-left: 10px;
+	margin-right: initial;
+}
+
 @media (max-width: 650px) { /*media should be bottom*/
   body {
     background-color: black;
@@ -29,7 +63,7 @@ h1{
 
 }
 h2{
-  
+
 }
   .container{
     max-width: 700px;

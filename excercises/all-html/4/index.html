@@ -1,58 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Title of the document</title>
-</head>
-<body>
-
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-
-<button onclick="history.back()">Go Back</button>
-
-
-<!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.square {
-  height: 50px;
-  width: 50px;
-  background-color: #555;
-}
-</style>
+  <title>cat</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+  <div class="container">
+    <div class="title">
+    <center>  <h1>cat</h1>
+      <h2>This article is about the species that is commonly kept as a pet. For the cat family, see Felidae. For other uses, see Cat (disambiguation).
+"Cats" redirects here. For other uses, see Cats (disambiguation).
+For technical reasons, "Cat #1" redirects here. For the album by Peter Criss, see Cat 1 (album).</h2> </center>
+    </div>
 
-<h2>Square CSS</h2>
-<div class="square"></div>
+    <div class="content">
 
-</body>
-</html>
+    </p>
+    <section>
+      <div>
+            <aside>
+                <p>And another aside here too, with a lot more text in it.</p>
+            </aside>
+          </div>
+        </section>
+    <p>
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.square {
-  height: 100px;
-  width: 100px;
-  background-color: #931;
-}
-</style>
-</head>
-<body>
+    </div>
+
+    <table class="infobox biota" style="text-align: left; width: 200px; font-size: 100%">
+      <tbody><tr>
+      <th colspan="2" style="text-align: center; background-color: rgb(235,235,210)">Cat<br /><div style="font-size: 85%;">Temporal range: 9,500 years ago – present</div>
+      </th></tr>
+      <tr>
+      <td colspan="2" style="text-align: center"><img src="../../../assets/imgs/cat.jpg" class="image"></a>
+      </td></tr>
+      <tr>
+      <td colspan="2" style="text-align: center; font-size: 88%">Various types of cat
+      </td></tr>
+
+      <tr style="text-align: center; background-color: rgb(235,235,210)">
+      <th colspan="2"><div style="text-align: center"><a href="/wiki/Conservation_status" title="Conservation status">Conservation status</a></div>
+      </th></tr>
+      <tr>
+      <td colspan="2"><div style="text-align: center">Domesticated<small></small></div>
+      </td></tr>
+
+  </div>
+      <p>
+        The cat (Felis catus) is a domestic species of small carnivorous mammal.[1][2] It is the only domesticated species in the family Felidae and is commonly referred to as the domestic cat or house cat to distinguish it from the wild members of the family.[4] A cat can either be a house cat, a farm cat, or a feral cat; the latter ranges freely and avoids human contact.[5] Domestic cats are valued by humans for companionship and their ability to kill rodents. About 60 cat breeds are recognized by various cat registries.[6]
+
+        The cat is similar in anatomy to the other felid species: it has a strong flexible body, quick reflexes, sharp teeth, and retractable claws adapted to killing small prey. Its night vision and sense of smell are well developed. Cat communication includes vocalizations like meowing, purring, trilling, hissing, growling, and grunting as well as cat-specific body language. A predator that is most active at dawn and dusk (crepuscular), the cat is a solitary hunter but a social species. It can hear sounds too faint or too high in frequency for human ears, such as those made by mice and other small mammals.[7] Cats also secrete and perceive pheromones.[8]
+      </p>
+      <p>
+      Female domestic cats can have kittens from spring to late autumn, with litter sizes often ranging from two to five kittens.[9] Domestic cats are bred and shown at events as registered pedigreed cats, a hobby known as cat fancy. Population control of cats may be effected by spaying and neutering, but their proliferation and the abandonment of pets has resulted in large numbers of feral cats worldwide, contributing to the extinction of entire bird, mammal, and reptile species.[10]
+      </p>
+      <p>
+        It was long thought that cat domestication began in ancient Egypt, where cats were venerated from around 3100 BC,[11][12] but recent advances in archaeology and genetics have shown that their domestication occurred in Western Asia around 7500 BC.[13]
+      </p>
+      <p>
+        As of 2021, there were an estimated 220 million owned and 480 million stray cats in the world.[14][15] As of 2017, the domestic cat was the second most popular pet in the United States, with 95.6 million cats owned[16][17][18] and around 42 million households own at least one cat.[19] In the United Kingdom, 26% of adults have a cat with an estimated population of 10.9 million pet cats as of 2020.[20]
+      </p>
 
 
 
+      <!DOCTYPE html>
+      <html>
+      <head>
+          <script>
+              //랜덤 정수 생성
+              function nextRandomInteger(limit){
+                  return Math.round(Math.random()*limit);
+              }
 
-<div class="square"></div>
+              //랜덤 알파벳 리턴
+              var alphabet='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
-</body>
-</html>
+              function randomAlphabet(){
+                  return alphabet.charAt(nextRandomInteger(25));
+              }
+
+              //랜덤 속도 생성
+              function randomSpeed(maxSpeed){
+                  return Math.random()*maxSpeed-Math.random()*maxSpeed;
+              }
+          </script>
+          <script>
+          var canvas = document.getElementById("canvas"),
+              ctx = canvas.getContext("2d"),
+              width = 600,
+              height = 600;
+
+          canvas.width = width;
+          canvas.height = height;
+
+          var boundaryRadius = 300,
+              boundaryX = 300,
+              boundaryY = 300;
+
+          var Ball = function (x, y, speed) {
+              this.x = x || 0;
+              this.y = y || 0;
+              this.radius = 10;
+              this.speed = speed || 10;
+              this.color = "rgb(255,0,0)";
+              this.angle = Math.random() * 360;
+              this.radians = this.angle * Math.PI/ 180;
+              this.velX = 0;
+              this.velY = 0;
+          }
+
+          Ball.prototype.update = function () {
+              var dx = boundaryX - this.x,
+                  dy = boundaryY - this.y,
+                  dist = Math.sqrt(dx * dx + dy * dy);
+
+              this.radians = this.angle * Math.PI/ 180;
+              this.velX = Math.cos(this.radians) * this.speed;
+              this.velY = Math.sin(this.radians) * this.speed;
+
+              // check if we are still inside of our boundary.
+              if (dist < boundaryRadius-this.radius) {
+                  this.x += this.velX;
+                  this.y += this.velY;
+              } else {
+                  // collision, step back and choose an opposite angle with a bit of randomness.
+                  this.x -= this.velX;
+                  this.y -= this.velY;
+                  this.angle += 180+Math.random()*45;
+              }
+          };
+
+          Ball.prototype.render = function () {
+              ctx.fillStyle = this.color;
+              ctx.beginPath();
+              // draw our circle with x and y being the center
+              ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+              ctx.closePath();
+              ctx.fill();
+
+              ctx.beginPath();
+              ctx.moveTo(this.x, this.y);
+              ctx.lineTo(this.px, this.py);
+              ctx.closePath();
+          };
+
+          var balls = [],
+              ballNum = 10;
+
+          for(var i = 0; i < ballNum; i++){
+              balls.push(new Ball(boundaryX + Math.random()*30, boundaryY + Math.random() * 30,  5 + Math.random()*15));
+          }
 
 
+          function drawAngles() {
+              var d = 50; //start line at (10, 20), move 50px away at angle of 30 degrees
+              var angle = 80 * Math.PI / 180;
+              ctx.beginPath();
+              ctx.moveTo(300, 0);
+              ctx.lineTo(300, 600); //x, y
+              ctx.moveTo(0, 300);
+              ctx.lineTo(600, 300);
+              ctx.arc(boundaryX, boundaryY, boundaryRadius, 0, 2 * Math.PI);
+              ctx.strokeStyle = "#000";
+              ctx.stroke();
+          }
+
+
+          function render() {
+              ctx.clearRect(0, 0, width, height);
+              drawAngles();
+
+              balls.forEach(function(e){
+                  e.update();
+                  e.render();
+              });
+
+              requestAnimationFrame(render);
+          }
+
+          render();
+          </script>
+          <script>
+              var canvasWidth=1920;
+              var canvasHeight=1080;
+
+              function MovingText(){
+                  this.x=nextRandomInteger(canvasWidth);
+                  this.y=nextRandomInteger(canvasHeight);
+                  this.vx=randomSpeed(3);
+                  this.vy=randomSpeed(2);
+
+                  this.body=document.createElement('h1');
+                  this.body.innerHTML=randomAlphabet();
+                  this.body.style.position='absolute';
+
+                  document.body.appendChild(this.body);
+              }
+
+              MovingText.prototype.move=function(){
+                  if(this.x<0||this.x>canvasWidth){this.vx*=-1;}
+                  if(this.y<0||this.y>canvasHeight){this.vy*=-1;}
+
+                  this.x+=this.vx;
+                  this.y+=this.vy;
+
+                  this.body.style.left=this.x+'px';
+                  this.body.style.top=this.y+'px';
+              };
+          </script>
+
+          <script>
+              window.onload=function(){
+                  var movingTexts=[];
+                  for(var i=0;i<100;i++){
+                      movingTexts.push(new MovingText());
+                  }
+
+              setInterval(function(){
+                  for(var i in movingTexts){
+                      movingTexts[i].move();
+                  }
+              },1000/60);
+              };
+          </script>
 </body>
 </html>

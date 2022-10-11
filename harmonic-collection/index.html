@@ -1,7 +1,51 @@
 <!DOCTYPE html>
 <html>
+<header>
+  <title>welcom jisu's hompage</title>
+  <h1>JISU KANG</h1>
+  <nav>
+    <ul id="na">
+        <li><a href="all-html"> HOME ⛪ </a>
+        </li>
+        <li><a href="#"> All-Html 🌹</a>
+          <ul>
+            <li><a href="excercises/all-html/1/index.html"> file 1</a></li>
+            <li><a href="excercises/all-html/2/index.html"> file 2</a></li>
+            <li><a href="excercises/all-html/3/index.html"> file 3</a></li>
+            <li><a href="excercises/all-html/4/index.html"> file 4</a></li>
+            <li><a href="excercises/all-html/5/index.html"> file 5</a></li>
+          </ul>
+        </li>
+        <li><a href="@"> Excercises 🌷 </a>
+          <ul>
+            <li><a href="excercises/all-html/1/index.html"> concrete poetry </a></li>
+              <br>
+            <li><a href="excercises/all-html/2/index.html"> hover</a></li>
+            <li><a href="excercises/all-html/3/index.html"> still life</a></li>
+          </ul>
+        </li>
+        <li><a href="harmonic-collection/index.html"> Project : Harmonic Collection ✨</a>
+          <ul>
+            <li><a href="harmonic-collection/index.html"> harmonic collection</a></li>
+            <br>
+            <li><a href="harmonic-collection/entries/entry-1/index.html"> entry 1 : Concrete Poetry</a></li>
+            <br>
+            <br>
+            <li><a href="harmonic-collection/entries/entry-2/index.html"> entry 2 : hover</a></li>
+            <br>
+            <li><a href="harmonic-collection/entries/entry-3/index.html"> entry 3 : still life </a></li>
+          </ul>
+        </li>
+      </ul>
+  </nav>
+</header>
+<link rel="stylesheet" href="../assets/main.css">
+<br>
+<br>
+<br>
+
 <head>
-<title>page title</title>
+<title>harmonic collection</title>
 
 <h1 id=cereal> My Cereal Bowl</h1>
 
@@ -61,9 +105,20 @@
 <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<h1 id="aa">a</h1>
-<h1 id="bb">b</h1>
-<h1 id="cc">c</h1>
+
+      <a href = "entries/entry-1/index.html">
+      <div id="aa">a</div>
+      </a>
+
+      <a href = "entries/entry-2/index.html">
+      <h1 id="bb">b </h1>
+      </a>
+
+      <a href = "entries/entry-3/index.html">
+      <h1 id="cc">c </h1>
+      </a>
+
+
 <h1 id="dd">d</h1>
 <h1 id="ff">f</h1>
 <h1 id="gg">g</h1>
@@ -74,167 +129,8 @@
 
 
 
-<!DOCTYPE html>
-<html>
-<head>
-    <script>
-        //랜덤 정수 생성
-        function nextRandomInteger(limit){
-            return Math.round(Math.random()*limit);
-        }
-
-        //랜덤 알파벳 리턴
-        var alphabet='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-
-        function randomAlphabet(){
-            return alphabet.charAt(nextRandomInteger(25));
-        }
-
-        //랜덤 속도 생성
-        function randomSpeed(maxSpeed){
-            return Math.random()*maxSpeed-Math.random()*maxSpeed;
-        }
-    </script>
-    <script>
-    var canvas = document.getElementById("canvas"),
-        ctx = canvas.getContext("2d"),
-        width = 600,
-        height = 600;
-
-    canvas.width = width;
-    canvas.height = height;
-
-    var boundaryRadius = 300,
-        boundaryX = 300,
-        boundaryY = 300;
-
-    var Ball = function (x, y, speed) {
-        this.x = x || 0;
-        this.y = y || 0;
-        this.radius = 10;
-        this.speed = speed || 10;
-        this.color = "rgb(255,0,0)";
-        this.angle = Math.random() * 360;
-        this.radians = this.angle * Math.PI/ 180;
-        this.velX = 0;
-        this.velY = 0;
-    }
-
-    Ball.prototype.update = function () {
-        var dx = boundaryX - this.x,
-            dy = boundaryY - this.y,
-            dist = Math.sqrt(dx * dx + dy * dy);
-
-        this.radians = this.angle * Math.PI/ 180;
-        this.velX = Math.cos(this.radians) * this.speed;
-        this.velY = Math.sin(this.radians) * this.speed;
-
-        // check if we are still inside of our boundary.
-        if (dist < boundaryRadius-this.radius) {
-            this.x += this.velX;
-            this.y += this.velY;
-        } else {
-            // collision, step back and choose an opposite angle with a bit of randomness.
-            this.x -= this.velX;
-            this.y -= this.velY;
-            this.angle += 180+Math.random()*45;
-        }
-    };
-
-    Ball.prototype.render = function () {
-        ctx.fillStyle = this.color;
-        ctx.beginPath();
-        // draw our circle with x and y being the center
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        ctx.closePath();
-        ctx.fill();
-
-        ctx.beginPath();
-        ctx.moveTo(this.x, this.y);
-        ctx.lineTo(this.px, this.py);
-        ctx.closePath();
-    };
-
-    var balls = [],
-        ballNum = 10;
-
-    for(var i = 0; i < ballNum; i++){
-        balls.push(new Ball(boundaryX + Math.random()*30, boundaryY + Math.random() * 30,  5 + Math.random()*15));
-    }
 
 
-    function drawAngles() {
-        var d = 50; //start line at (10, 20), move 50px away at angle of 30 degrees
-        var angle = 80 * Math.PI / 180;
-        ctx.beginPath();
-        ctx.moveTo(300, 0);
-        ctx.lineTo(300, 600); //x, y
-        ctx.moveTo(0, 300);
-        ctx.lineTo(600, 300);
-        ctx.arc(boundaryX, boundaryY, boundaryRadius, 0, 2 * Math.PI);
-        ctx.strokeStyle = "#000";
-        ctx.stroke();
-    }
-
-
-    function render() {
-        ctx.clearRect(0, 0, width, height);
-        drawAngles();
-
-        balls.forEach(function(e){
-            e.update();
-            e.render();
-        });
-
-        requestAnimationFrame(render);
-    }
-
-    render();
-    </script>
-    <script>
-        var canvasWidth=1920;
-        var canvasHeight=1080;
-
-        function MovingText(){
-            this.x=nextRandomInteger(canvasWidth);
-            this.y=nextRandomInteger(canvasHeight);
-            this.vx=randomSpeed(3);
-            this.vy=randomSpeed(2);
-
-            this.body=document.createElement('h1');
-            this.body.innerHTML=randomAlphabet();
-            this.body.style.position='absolute';
-
-            document.body.appendChild(this.body);
-        }
-
-        MovingText.prototype.move=function(){
-            if(this.x<0||this.x>canvasWidth){this.vx*=-1;}
-            if(this.y<0||this.y>canvasHeight){this.vy*=-1;}
-
-            this.x+=this.vx;
-            this.y+=this.vy;
-
-            this.body.style.left=this.x+'px';
-            this.body.style.top=this.y+'px';
-        };
-    </script>
-
-    <script>
-        window.onload=function(){
-            var movingTexts=[];
-            for(var i=0;i<100;i++){
-                movingTexts.push(new MovingText());
-            }
-
-        setInterval(function(){
-            for(var i in movingTexts){
-                movingTexts[i].move();
-            }
-        },1000/60);
-        };
-    </script>
-</head>
 <body>
   <h6><a href="https://www.figma.com/file/gX3VyZ3Fddt2LfHOsmbuqF/Untitled?node-id=0%3A1">MY FIGMA SCKETCH</a>
   </h6>
