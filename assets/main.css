@@ -25,6 +25,7 @@ main {
 
 body {
   background: #EEE;
+  padding-left:100px;
 }
 
 body, html {
@@ -38,6 +39,7 @@ body, html {
 head{
   padding-top:100px;
 }
+
 
 #na{
   list-style:none;
@@ -112,4 +114,9 @@ head{
   height:35px;
   overflow:visible;
   padding:0;
+}
+
+img{
+  position:absolute;
+  left:100px;
 }
