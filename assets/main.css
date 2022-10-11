@@ -27,9 +27,37 @@ body {
   background: #EEE;
   padding-left:100px;
 }
+#p{
+  position: absolute;
+width: 505px;
+height: 333px;
+left: 614px;
+top: 254px;
 
-body, html {
-  height: 200%;
+font-family: 'arial';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 15px;
+
+color: #000000;
+}
+
+#last{
+  position: absolute;
+  width: 599px;
+  height: 39px;
+  left: calc(50% - 599px/2 + 0.5px);
+  top: calc(50% - 39px/2 + 1324.5px);
+
+  font-family: 'arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  color: #000000;
 }
 
 * {
