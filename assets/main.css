@@ -12,11 +12,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding : 70px;
   z-index: 1
+
 }
 
 h1, p {
-  margin: 0;
+  margin: 30px;
 }
 
 main {

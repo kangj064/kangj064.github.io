@@ -1,6 +1,8 @@
 body {
   background-color: #AFA1FF;
+
 }
+
 
 @font-face {
   font-family: "Arbutus";
@@ -44,7 +46,7 @@ body {
   font-weight: 800;
   font-size: 64px;
   line-height: 77px;
-
+    padding : 100px 20px;
   color: #000000;
 }
 #a {
@@ -221,4 +223,8 @@ body {
   color: #BE8686;
 
   transform: rotate(27.67deg);
+}
+
+#last {
+  
 }
