@@ -1,4 +1,9 @@
-header {
+#logo {
+  font-family: 'Rock Salt', cursive;
+  font-size: 25px;
+  }
+
+  header {
   position: fixed;
   top: 0;
   left: 0;
@@ -12,14 +17,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding : 70px;
+  padding : 60px;
   z-index: 1
 
 }
 
-h1, p {
-  margin: 30px;
-}
 
 main {
   padding: 1rem;
@@ -27,8 +29,8 @@ main {
 }
 
 body {
-  background: #EEE;
-  padding-left:100px;
+  background: #fffff;
+
 }
 #p{
   position: absolute;

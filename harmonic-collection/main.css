@@ -85,7 +85,8 @@ body {
   transform: rotate(21.74deg);
 }
 
-#bb {position: absolute;
+#bb {
+  position: absolute;
   width: 105px;
   height: 64px;
   left: 454px;
@@ -226,5 +227,5 @@ body {
 }
 
 #last {
-  
+
 }
