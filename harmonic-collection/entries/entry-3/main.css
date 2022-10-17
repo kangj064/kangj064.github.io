@@ -1,4 +1,7 @@
-
+a {
+  padding : 30px;
+  color : yellow;
+}
 #rec1{
 position: absolute;
 width: 88px;
