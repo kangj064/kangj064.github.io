@@ -1,0 +1,80 @@
+body {
+    font-family: 'Oswald', sans-serif;
+  }
+
+  /* row 2*/
+
+.column-layout {
+    display: flex;
+    max-width: 1300px;
+    background-color: pink;
+    padding: 20px 50px;
+    margin: 40px auto;
+   /* justify-content: space-between;*/
+    }
+
+.main-column {
+    flex: 2;
+    background-color: white;
+    padding: 0 10px;
+    order: 2;
+}
+
+.sidebar-one {
+    flex: 1;
+    background-color: lightgray;
+    padding: 0 10px;
+    order: 1;
+}
+
+.sidebar-two {
+    flex: 1;
+    background-color: lightgray;
+    padding: 0 10px;
+    order: 3;
+    }
+
+    .container {
+      display: flex;
+      Padding:10px;
+      background-color: #;
+      min-height: 300px;
+
+      color:  #;
+      font-size:  36px;
+      text-align:  center;
+    }
+    /*This tells the browser to account for any border and padding in the values you specify for an element's width and height.*/
+    * {box-sizing:  border-box;}
+    .item {
+      margin: 10px 10px;
+      width: 100px;
+    }
+    .item1 {
+      background-color: #ff62f4;
+    }
+    .item2 {
+      background-color:  #00a4ff
+    }
+    .item3 {
+      background-color:  #af6801;
+    }
+    .item4 {
+      background-color:  #01ed6e;
+    }
+    .item5 {
+      background-color:  #fff93f;
+    }
+
+    .item6 {
+      background-color:  #ff4e00;
+    }
+
+    .item7 {
+      background-color:  #ff4e00;
+    }
+
+    .break {
+      flex-basis: 100%;
+      height: 0;
+    }
