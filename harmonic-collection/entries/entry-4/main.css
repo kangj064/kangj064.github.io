@@ -1,0 +1,101 @@
+body {
+  background-color:  #FFffff;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+aside {
+
+	float: left;
+	margin-right: 30px;
+	padding: 30px;
+
+}
+
+
+img {
+  max-width: 100%;
+}
+body{
+  }
+
+  h1{
+
+}
+.container{
+
+}
+
+@media (max-height: 1280px) {
+  body {
+    background-color: white;
+      padding: 200px;
+  }
+
+h1 {
+  font-size: 200px;
+}
+h2 {
+  font-size: 60px;
+}
+
+@media (max-width: 768px) { /*media should be bottom*/
+  body {
+    background-color: white;
+    color:  black;
+      padding: 10px;
+  }
+h1{
+  font-size: 130px;
+}
+h2{  font-size: 40px;
+
+}
+  .container{
+    max-width: 700px;
+  }
+}
+
+@media (max-height: 650px) {
+  body {
+    background-color: white;
+        padding: 10px;
+  }
+
+  h1{
+    font-size: 100px;
+  }
+
+  h2{  font-size: 30px;
+
+  }
+
+  body {
+  font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  body {
+    background-color: white;
+    color:  white;
+
+  }
+  h1{
+  font-size: 96px;
+  }
+
+}
+
+@media (max-width: 320px) {
+  body {
+    background-color: white;
+    color:  white;
+  }
+
+  h1{
+  font-size: 48px;
+  }
+  h2{  font-size: 20px;
+
+  }
+}
