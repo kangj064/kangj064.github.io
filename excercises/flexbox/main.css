@@ -48,3 +48,8 @@
 .item6 {
   background-color:  #ff4e00;
 }
+
+.break {
+  width: 100%;
+  height: 0;
+}

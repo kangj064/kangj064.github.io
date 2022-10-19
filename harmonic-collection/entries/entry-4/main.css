@@ -1,6 +1,7 @@
 body {
   background-color:  #FFffff;
   font-family: 'Oswald', sans-serif;
+  text-align: center;
 
 }
 
@@ -43,7 +44,8 @@ h2 {
   body {
     background-color: white;
     color:  black;
-      padding: 10px;
+      padding: 15px;
+        max-width: 50%;
   }
 h1{
   font-size: 130px;
@@ -51,6 +53,7 @@ h1{
 h2{  font-size: 40px;
 
 }
+
   .container{
     max-width: 700px;
   }
@@ -63,7 +66,7 @@ h2{  font-size: 40px;
   }
 
   h1{
-    font-size: 100px;
+    font-size: 90px;
   }
 
   h2{  font-size: 30px;
@@ -78,10 +81,11 @@ h2{  font-size: 40px;
   body {
     background-color: white;
     color:  white;
+        margin : 15px;
 
   }
   h1{
-  font-size: 96px;
+  font-size: 70px;
   }
 
 }
@@ -90,6 +94,8 @@ h2{  font-size: 40px;
   body {
     background-color: white;
     color:  white;
+    margin : 10px;
+
   }
 
   h1{
