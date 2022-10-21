@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Title of the document</title>
-</head>
 
-<body>
-  <ul id="nav">
-    <li><a href="https://kangj064.github.io/"> HOME </a>
-    </li>
-    <li><a href="#"> all-html</a>
-      <ul>
-        <li><a href="../1/index.html"> file 1</a></li>
-        <li><a href="../2/index.html"> file 2</a></li>
-        <li><a href="../3/index.html"> file 3</a></li>
-        <li><a href="../4/index.html"> file 4</a></li>
-        <li><a href="../5/index.html"> file 5</a></li>
+<header>
+  <title>hover</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
+
+  <div id=logo><h1>Jisu Kang</h1></div>
+
+  <nav>
+    <ul id="na">
+        <li><a href="../../../index.html"> HOME ⛪ </a>
+        </li>
+        <li><a href="#"> All-Html 🌹</a>
+          <ul>
+            <li><a href="../../../excercises/all-html/1/index.html"> file 1</a></li>
+            <li><a href="../../../excercises/all-html/2/index.html"> file 2</a></li>
+            <li><a href="../../../excercises/all-html/3/index.html"> file 3</a></li>
+            <li><a href="../../../excercises/all-html/4/index.html"> file 4</a></li>
+            <li><a href="../../../excercises/all-html/5/index.html"> file 5</a></li>
+          </ul>
+        </li>
+        <li><a href="@"> Excercises 🌷 </a>
+          <ul>
+            <li><a href="@"> concrete poetry </a></li>
+              <br>
+            <li><a href="../../../excercises/hoverstates/index.html"> hoverstate</a></li>
+            <li><a href="../../../excercises/stilllife/index.html"> still life</a></li>
+          </ul>
+        </li>
+        <li><a href="harmonic-collection/index.html"> Project : Harmonic Collection ✨</a>
+          <ul>
+            <li><a href="../../index.html"> harmonic collection</a></li>
+            <br>
+            <li><a href="../entry-1/index.html"> entry 1 : Concrete Poetry</a></li>
+            <br>
+            <br>
+            <li><a href="index.html"> entry 2 : hover</a></li>
+            <br>
+            <li><a href="../entry-3/index.html"> entry 3 : still life </a></li>
+            <br>
+            <li><a href="../entry-4/index.html"> entry 4 : responsive practice </a></li>
+          </ul>
+        </li>
       </ul>
-    </li>
-    <li><a href="#"> entry</a>
-      <ul>
-        <li><a href="harmonic-collection/entries/entry-1/index.html"> entry 1 : Concrete Poetry</a></li>
-        <br>
-        <br>
-        <li><a href="harmonic-collection/entries/entry-2/index.html"> entry 2 : hover</a></li>
-        <br>
-        <br>
-        <li><a href="harmonic-collection/entries/entry-3/index.html"> entry 3 : </a></li>
-      </ul>
-    </li>
-    <li><a href="harmonic-collection/entries/entry-1/index.htm"> harmonic collection</a>
-   </li>
-  </ul>
+  </nav>
+</header>
 
-
+<link rel="stylesheet" href="../../../assets/main.css">
   <link rel="stylesheet" href="main.css">
 
 
@@ -40,6 +61,7 @@
   <!DOCTYPE html>
   <html>
   <head>
+
   <style>
   a.ex1:hover, a.ex1:active {color: red;}
   a.ex2:hover, a.ex2:active {font-size: 150%;}
@@ -51,7 +73,7 @@
   </head>
   <body>
 
-  <p>Mouse over the links to see them change layout.</p>
+  <p>Click your feeling, it amplifies your feeling.</p>
 
   <p><a class="ex1" href="default.asp">This link changes color</a></p>
   <p><a class="ex2" href="default.asp">This link changes font-size</a></p>
@@ -72,8 +94,16 @@
   <!DOCTYPE html>
   <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="../../../excercises/hoverstates/assets/css/main.css">
+  	<link rel="icon" href="assets/imgs/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+  	<div class="content">
+<span class="gradient-fill">Happy</span>
+</div>
+
   <style>
-  div {background-color: black;}
+
   div a {
     text-decoration: none;
     color: white;
@@ -106,107 +136,5 @@
 
 
   </body>
+
   </html>
-
-<canvas id="canvas"></canvas>
-<script>
-  var canvas = document.getElementById("canvas"),
-      ctx = canvas.getContext("2d"),
-      width = 600,
-      height = 600;
-
-  canvas.width = width;
-  canvas.height = height;
-
-  var boundaryRadius = 300,
-      boundaryX = 300,
-      boundaryY = 300;
-
-  var Ball = function (x, y, speed) {
-      this.x = x || 0;
-      this.y = y || 0;
-      this.radius = 10;
-      this.speed = speed || 150;
-      this.color = "rgb(255,0,0)";
-      this.angle = Math.random() * 360;
-      this.radians = this.angle * Math.PI/ 180;
-      this.velX = 0;
-      this.velY = 0;
-  }
-
-  Ball.prototype.update = function () {
-      var dx = boundaryX - this.x,
-          dy = boundaryY - this.y,
-          dist = Math.sqrt(dx * dx + dy * dy);
-
-      this.radians = this.angle * Math.PI/ 180;
-      this.velX = Math.cos(this.radians) * this.speed;
-      this.velY = Math.sin(this.radians) * this.speed;
-
-      // check if we are still inside of our boundary.
-      if (dist < boundaryRadius-this.radius) {
-          this.x += this.velX;
-          this.y += this.velY;
-      } else {
-          // collision, step back and choose an opposite angle with a bit of randomness.
-          this.x -= this.velX;
-          this.y -= this.velY;
-          this.angle += 180+Math.random()*45;
-      }
-  };
-
-  Ball.prototype.render = function () {
-      ctx.fillStyle = this.color;
-      ctx.beginPath();
-      // draw our circle with x and y being the center
-      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-      ctx.closePath();
-      ctx.fill();
-
-      ctx.beginPath();
-      ctx.moveTo(this.x, this.y);
-      ctx.lineTo(this.px, this.py);
-      ctx.closePath();
-  };
-
-  var balls = [],
-      ballNum = 10;
-
-  for(var i = 0; i < ballNum; i++){
-      balls.push(new Ball(boundaryX + Math.random()*30, boundaryY + Math.random() * 30,  5 + Math.random()*15));
-  }
-
-
-  function drawAngles() {
-      var d = 50; //start line at (10, 20), move 50px away at angle of 30 degrees
-      var angle = 80 * Math.PI / 180;
-      ctx.beginPath();
-      ctx.moveTo(300, 0);
-      ctx.lineTo(300, 600); //x, y
-      ctx.moveTo(0, 300);
-      ctx.lineTo(600, 300);
-      ctx.arc(boundaryX, boundaryY, boundaryRadius, 0, 2 * Math.PI);
-      ctx.strokeStyle = "#000";
-      ctx.stroke();
-  }
-
-
-  function render() {
-      ctx.clearRect(0, 0, width, height);
-      drawAngles();
-
-      balls.forEach(function(e){
-          e.update();
-          e.render();
-      });
-
-      requestAnimationFrame(render);
-  }
-
-  render();
-</script>
-  <style>
-  a:hover {
-    background-color: yellow;
-  }
-  </style>

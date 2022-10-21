@@ -28,11 +28,8 @@ main {
   height: 100%;
 }
 
-body {
-  background: #fffff;
 
-}
-#p{
+#ppp{
   position: absolute;
 width: 505px;
 height: 333px;
@@ -149,7 +146,7 @@ head{
   padding:0;
 }
 
-img{
+#pic{
   position:absolute;
   left:100px;
 }

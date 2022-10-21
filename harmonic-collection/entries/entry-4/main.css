@@ -17,15 +17,7 @@ aside {
 img {
   max-width: 100%;
 }
-body{
-  }
 
-  h1{
-
-}
-.container{
-
-}
 
 @media (max-height: 1280px) {
   body {
@@ -33,12 +25,17 @@ body{
       padding: 200px;
   }
 
-h1 {
+h2 {
   font-size: 200px;
 }
-h2 {
+
+h3 {
   font-size: 60px;
 }
+
+
+
+
 
 @media (max-width: 768px) { /*media should be bottom*/
   body {
@@ -47,10 +44,14 @@ h2 {
       padding: 15px;
         max-width: 50%;
   }
-h1{
+
+  nav {display: none;}
+
+  h2 {
   font-size: 130px;
-}
-h2{  font-size: 40px;
+  }
+  h3 {  font-size: 40px;
+  }
 
 }
 
@@ -65,11 +66,11 @@ h2{  font-size: 40px;
         padding: 10px;
   }
 
-  h1{
+  h2{
     font-size: 90px;
   }
 
-  h2{  font-size: 30px;
+  h3{  font-size: 30px;
 
   }
 
@@ -84,7 +85,7 @@ h2{  font-size: 40px;
         margin : 15px;
 
   }
-  h1{
+  h2{
   font-size: 70px;
   }
 
@@ -98,10 +99,10 @@ h2{  font-size: 40px;
 
   }
 
-  h1{
+  h2{
   font-size: 48px;
   }
-  h2{  font-size: 20px;
+  h3{  font-size: 20px;
 
   }
 }
