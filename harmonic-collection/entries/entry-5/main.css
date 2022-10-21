@@ -2,7 +2,6 @@ body {
     font-family: 'Oswald', sans-serif;
   }
 
-  /* row 2*/
 
 .column-layout {
     display: flex;
@@ -45,34 +44,59 @@ body {
       text-align:  center;
     }
     /*This tells the browser to account for any border and padding in the values you specify for an element's width and height.*/
-    * {box-sizing:  border-box;}
-    .item {
-      margin: 10px 10px;
-      width: 200px;
-    }
-    .item1 {
-      background-color: #ff62f4;
-    }
-    .item2 {
-      background-color:  #00a4ff
-    }
-    .item3 {
-      background-color:  #af6801;
-    }
-    .item4 {
-      background-color:  #01ed6e;
-    }
-    .item5 {
-      background-color:  #fff93f;
+
+
+
+
+
+
+    .week {
+      display: flex;
     }
 
-    .item6 {
-      background-color:  #ff4e00;
+    .day {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 0;
     }
 
-    .item7 {
-      background-color:  #ff4e00;
+    .week:first-of-type .day:first-of-type {
+      margin-left: 85.85714%;
     }
+
+    .week:last-of-type .day:last-of-type {
+      margin-right: 0%;
+    }
+
+    /* OTHER STYLES */
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background: linear-gradient(top, #fad961, #f76d1d);
+      background-attachment: fixed;
+    }
+
+    .month {
+      max-width: 560px;
+      margin: 20px auto;
+    }
+
+    .week {
+      height: 80px;
+    }
+
+    .day {
+      color: #F98909;
+      padding: 5px;
+      background-color: transparentize(white, 0.30);
+      box-shadow:
+        -1px -1px #F9A440,
+        inset -1px -1px 0 0 #F9A440;
+    }
+
 
     .break {
       width: 100%;
