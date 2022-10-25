@@ -1,54 +1,103 @@
 body {
     font-family: 'Oswald', sans-serif;
+
   }
 
+.speaking {
+  position: absolute;
+  position: absolute;
+  width: 299px;
+  height: 537px;
+  left: 1133px;
+  top: 78px;
 
-.column-layout {
+  background: pink;
+  border-radius: 36px;
+}
+
+.speaking2 {
+        width: 0;
+        height: 0;
+        border-top: 50px solid transparent;
+        border-right: 100px solid pink;
+        border-bottom: 50px solid transparent;
+        position: absolute;
+
+        left: 1085px;
+        top: 127px;
+
+
+}
+
+h1{
+
+
+  text-align: center;
+
+  font-family: 'Oswald', sans-serif;
+
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 15px;
+  color : pink;
+padding : 100px;
+
+
+  color: #000000;
+
+}
+h3{
+    position: absolute;
+    width: 144px;
+    height: 15px;
+    left: 103px;
+    top: 376px;
+color : green;
+    font-family: 'Oswald', sans-serif;
+
+    font-weight: 400;
+    font-size: 300px;
+    line-height: 15px;
+    transform: rotate(-14.41deg);
+    /* identical to box height */
+
+
+    color: green;
+  }
+
+  h4{
+      position: absolute;
+      width: 144px;
+      height: 15px;
+      left: 1123.14px;
+      top: 745px;
+
+      font-family: 'Oswald', sans-serif;
+
+      font-weight: 400;
+      font-size: 300px;
+      line-height: 15px;
+
+      /* identical to box height */
+
+
+      color: royalblue;
+      transform: rotate(17.63deg);
+    }
+
+.oct {
     display: flex;
-    max-width: 1300px;
-    background-color: pink;
-    padding: 20px 50px;
-    margin: 40px auto;
-   /* justify-content: space-between;*/
-    }
+  max-width: 1300px;
+  background-color : ;
+  padding: 10px 10px;
 
-.main-column {
-    flex: 2;
-    background-color: white;
-    padding: 0 10px;
-    order: 2;
 }
-
-.sidebar-one {
-    flex: 1;
-    background-color: lightgray;
-    padding: 0 10px;
-    order: 1;
+.oct1 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  text-align: center;
 }
-
-.sidebar-two {
-    flex: 1;
-    background-color: lightgray;
-    padding: 0 10px;
-    order: 3;
-    }
-
-    .container {
-      display: flex;
-      Padding:10px;
-      background-color: #;
-      min-height: 300px;
-
-      color:  #;
-      font-size:  36px;
-      text-align:  center;
-    }
-    /*This tells the browser to account for any border and padding in the values you specify for an element's width and height.*/
-
-
-
-
-
 
     .week {
       display: flex;
@@ -77,6 +126,7 @@ body {
     body {
       background: linear-gradient(top, #fad961, #f76d1d);
       background-attachment: fixed;
+
     }
 
     .month {
@@ -89,13 +139,14 @@ body {
     }
 
     .day {
-      color: #F98909;
+      color: #000000;
       padding: 5px;
       background-color: transparentize(white, 0.30);
       box-shadow:
-        -1px -1px #F9A440,
-        inset -1px -1px 0 0 #F9A440;
+        -1px -1px #000000,
+        inset -1px -1px 0 0 #000000;
     }
+
 
 
     .break {

@@ -1,3 +1,4 @@
+
 /* reset */
 
 * {
@@ -40,7 +41,7 @@ body {
 
 .long-way {
   font-style: italic;
-  transition: all 10s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .long-way:hover {
@@ -51,7 +52,7 @@ body {
 .simplelink {
   text-decoration: none;
   color: #000;
-  background-color: #f2e1ff;
+  background-color: #833ab4;
   transition: all 0.1s ease;
 }
 
@@ -125,11 +126,12 @@ body {
 }
 
 .writing:hover:after {
-  content: url(../imgs/chia.png);
+  content: url(https://c-fa.cdn.smule.com/rs-s60/arr/0d/8b/eb3941fb-1bf1-48c6-80aa-c23de4badc8f.jpg);
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
 }
 
 .fillrect {
@@ -155,6 +157,7 @@ body {
 .palm {
 margin-top: 60px;
 transition: all 0.5s ease;
+width : 200px;
 }
 
 .palm:hover {
