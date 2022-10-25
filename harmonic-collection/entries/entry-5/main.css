@@ -29,6 +29,13 @@ body {
 
 }
 
+.bubble {
+  position: absolute;
+  font-size: 20px;
+  left: 1183px;
+  top: 108px;
+}
+
 h1{
 
 

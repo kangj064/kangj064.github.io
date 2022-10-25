@@ -331,12 +331,12 @@ h1{
   width: 589px;
   height: 347px;
   left: 1264px;
-  top: 94px;
-
+  top: 194px;
+  max-width: 200px;
 font-family: 'Montserrat', sans-serif;
 
 font-weight: 100;
-font-size: 100px;
+font-size: 40px;
 line-height: 100%;
 text-align: center;
 

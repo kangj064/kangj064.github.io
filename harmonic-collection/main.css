@@ -1,3 +1,136 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #f6aca2;
+  --color-secondary: #f49b90;
+  --color-tertiary: #f28b7d;
+  --color-quaternary: #f07a6a;
+  --color-quinary: #ee6352;
+  /*
+  --color-primary: #5192ED;
+  --color-secondary: #69A1F0;
+  --color-tertiary: #7EAEF2;
+  --color-quaternary: #90BAF5;
+  --color-quinary: #A2C4F5;
+  */
+}
+
+h2{
+  position : absolute;
+  left : 30px;
+  top : 60px;
+}
+h3{
+  position : absolute;
+  left : 110px;
+  top : 60px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: canada-type-gibson, sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  display: absolute;
+  flex-direction: column;
+
+  overflow: hidden;
+  background-color: #eff8e2;
+
+}
+
+.content {
+  display: flex;
+
+}
+
+.text_shadows {
+  text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+    9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  font-family: bungee, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: calc(2rem + 5vw);
+  text-align: center;
+  margin: 0;
+  color: var(--color-primary);
+  //color: transparent;
+  //background-color: white;
+  //background-clip: text;
+  animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+  letter-spacing: 0.4rem;
+}
+
+@keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  20% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  30% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  40% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  50% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  60% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  70% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  80% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  90% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+  }
+  60% {
+    transform: translate(-12px, -12px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+
+
 body {
   background-color: #AFA1FF;
 
@@ -71,7 +204,7 @@ body {
   position: absolute;
   width: 106px;
   height: 85px;
-  left: 793.49px;
+  left: 743.49px;
   top: 317px;
 
   font-family: 'Arbutus';
@@ -89,8 +222,8 @@ body {
   position: absolute;
   width: 105px;
   height: 64px;
-  left: 454px;
-  top: 364px;
+  left: 504px;
+  top: 264px;
 
   font-family: 'Arbutus';
   font-style: normal;
@@ -105,7 +238,7 @@ body {
   position: absolute;
   width: 158px;
   height: 96px;
-  left: 559px;
+  left: 659px;
   top: 355.89px;
 
   font-family: 'Arbutus';
@@ -123,7 +256,7 @@ body {
   position: absolute;
   width: 143px;
   height: 110px;
-  left: 766.34px;
+  left: 666px;
   top: 188px;
 
   font-family: 'Arbutus';
@@ -142,7 +275,7 @@ body {
   width: 176px;
   height: 125px;
   left: 806px;
-  top: 458.27px;
+  top: 308.27px;
 
   font-family: 'Arbutus';
   font-style: normal;
@@ -159,8 +292,8 @@ body {
   position: absolute;
   width: 78px;
   height: 74px;
-  left: 892px;
-  top: 232px;
+  left: 792px;
+  top: 132px;
 
   font-family: 'Arbutus';
   font-style: normal;
@@ -178,7 +311,7 @@ body {
   width: 182px;
   height: 82px;
   left: 504px;
-  top: 235px;
+  top: 135px;
 
   font-family: 'Arbutus';
   font-style: normal;
@@ -194,12 +327,12 @@ body {
   width: 178px;
   height: 109px;
   left: 648.62px;
-  top: 171px;
+  top: 71px;
 
   font-family: 'Arbutus';
   font-style: normal;
   font-weight: 400;
-  font-size: 64px;
+  font-size: 44px;
   line-height: 80px;
 
   color: #BE8686;
@@ -212,20 +345,22 @@ body {
   position: absolute;
   width: 178px;
   height: 109px;
-  left: 587.49px;
-  top: 450.9px;
+  left: 487.49px;
+  top: 350.9px;
 
   font-family: 'Arbutus';
   font-style: normal;
   font-weight: 400;
-  font-size: 64px;
+  font-size: 44px;
   line-height: 80px;
 
   color: #BE8686;
 
-  transform: rotate(27.67deg);
+  transform: rotate(-27.67deg);
 }
 
-#last {
-
+ h5 {
+   position : absolute;
+left : 60px;
+z-index: 1;
 }
