@@ -1,0 +1,65 @@
+html, body, * {
+    margin: 0;
+    padding: 0;
+    background-color: ;
+
+      animation:  colorSwap 5s ease-in-out infinite;
+
+        }
+
+.canvas {
+    width: 1200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        }
+
+.circle {
+    background-color: white;
+    border-radius: 50%;
+    border-width: 5px;
+    height: 595px;
+    width: 595px;
+    margin-right: 5px;
+    float: left;
+    animation-name: blur;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes colorSwap {
+  0% {
+    fill: default;
+    background-color: white;
+  }
+  100% {
+    fill: #6d79cd;
+    background-color: black;
+  }
+}
+
+
+@keyframes blur {
+    from {
+        -webkit-filter: blur(00px); /* Safari */
+        filter: blur(00px);
+      background-color: white;}
+
+    to {
+        -webkit-filter: blur(80px); /* Safari */
+        filter: blur(80px);
+        background-color: black; }
+}
+
+
+@keyframes blur2 {
+    from {
+        -webkit-filter: blur(00px); /* Safari */
+        filter: blur(00px);  }
+
+    to {
+        -webkit-filter: blur(80px); /* Safari */
+        filter: blur(80px);  }
+}

@@ -1,0 +1,282 @@
+h1{position: absolute;
+width: 1512px;
+height: 250px;
+left: 15px;
+top: 39px;
+
+font-family: 'Revalia';
+font-style: normal;
+font-weight: 400;
+font-size: 128px;
+line-height: 159px;
+text-align: center;
+
+color: #000000;
+
+}
+
+h6{position: absolute;
+width:px;
+height: px;
+left: 720px;
+top: 539px;
+color : black;
+
+font-family: 'inter';
+font-style: normal;
+font-weight: ;
+font-size: 15px;
+line-height: 159px;
+text-align: center;
+
+color: #000000;}
+
+.container {
+  display: flex;
+  Padding-top:200px;
+  background-color: #;
+  min-height: 300px;
+  font-family: 'PT Mono', monospace;
+  color:  #;
+  font-size:  36px;
+  text-align:  center;
+  justify-content: center;
+  z-index: 1;
+}
+/*This tells the browser to account for any border and padding in the values you specify for an element's width and height.*/
+* {box-sizing:  border-box;}
+.item {
+  margin: 10px 10px;
+  width: 300px;
+}
+.item1 {
+  background-color: #;
+}
+.item2 {
+  background-color:  #;
+}
+.item3 {
+  background-color:  #;
+}
+.item4 {
+  background-color:  #;
+}
+
+item {
+  animation:  item 20s ease-in-out infinite;
+}
+
+@keyframes  item {
+  0% {left:0%;
+  color: pink;}
+  33% {left:0%;
+  background-color:
+#C10000;}
+  66% {left:-100%;
+  background-color: blue;}
+  100% {left:-100%;
+  background-color: yellow;}
+
+}
+
+
+
+.load-wrapp {
+  float: center;
+  width: 1550px;
+  height: 100px;
+  margin: 0 10px 10px 0;
+  padding: 20px 20px 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #;
+}
+
+.load-wrapp p {
+  padding: 0 0 20px;
+}
+.load-wrapp:last-child {
+  margin-right: 0;
+}
+
+
+.bar {
+  float: left;
+  width: 15px;
+  height: 10px;
+  position: absolute;
+  top: 270px;
+  border-radius: 2px;
+  background-color: #4b9cdb;
+  z-index: -1;
+}
+
+.load-10 .bar {
+  animation: loadingJ 19s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+}
+
+
+@keyframes loadingJ {
+  0% {
+    transform: translate(460px, 0);
+    width: 250px;
+  }
+
+25%,27%{
+  transform: translate(212px, 0);
+  background-color: white;
+  width: 115px;
+}
+  50% {
+    transform: translate(840px, 0);
+    background-color: yellow;
+    width: 105px;}
+    70%,80% {
+      transform: translate(1183px, 0);
+      background-color: black;
+      width: 105px;}
+
+      95%,100%{
+        transform: translate(465px, 0);
+        background-color: #f5634a;
+        width: 250px;}
+
+}
+
+
+
+
+
+
+* {margin:0;padding:0;box-sizing:border-box;}
+ul, li {list-style:none;}
+
+[name="slide"] {display:none;}
+.slidebox {width: 300px;
+  height: 300px;
+  position : absolute;
+  top : 300px;
+  left : 620px;
+
+  /*max-width:500px;width:100%;margin:0 auto; */
+  overflow: hidden;}
+
+.slidebox img {max-width:100%;
+
+object-fit: cover;}
+.slidebox .slidelist {
+	white-space:nowrap;
+	font-size:0;
+	overflow:hidden;
+}
+.slidebox .slideitem {
+	position:relative;
+  left: 200px;
+	display:inline-block;
+	vertical-align:middle;
+	width:100%;
+	transition:all .35s;
+}
+/*
+.slidebox .slideitem label {
+	position:absolute;
+	z-index:1;
+	top:50%;
+  overflow:hidden;
+  object-fit: cover;
+	transform:translateY(-50%);
+	padding:20px;
+	border-radius:50%;
+	cursor:pointer;
+}
+label.left {
+	left:20px;
+	background-color:#;
+	background-image:url('https://static.thenounproject.com/png/136304-200.png');
+	background-position:center center;
+	background-size:50%;
+	background-repeat:no-repeat;
+}
+label.right {
+	right:20px;
+	background-color:#;
+	background-image:url('https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png');
+	background-position:center center;
+	background-size:50%;
+	background-repeat:no-repeat;
+}
+*/
+/* 페이징 스타일 */
+.paginglist {text-align:center;padding:30px 0;}
+.paginglist > li {display:inline-block;vertical-align:middle;margin:0 10px;}
+.paginglist > li > label {display:block;padding:10px 30px;border-radius:10px;background:#ccc;cursor:pointer;}
+.paginglist > li:hover > label {background:#333;}
+
+[id="slide01"]:checked ~ .slidelist .slideitem {transform:translateX(0);animation:slide01 20s infinite;}
+[id="slide02"]:checked ~ .slidelist .slideitem {transform:translateX(-100%);animation:slide02 20s infinite;}
+[id="slide03"]:checked ~ .slidelist .slideitem {transform:translateX(-200%);animation:slide03 20s infinite;}
+[id="slide04"]:checked ~ .slidelist .slideitem {transform:translateX(-300%);animation:slide04 20s infinite;}
+
+  body{
+    animation:  body 20s ease-in-out infinite;
+  }
+
+  @keyframes  body {
+  	0% {left:0%;
+    background-color: pink;}
+  	47% {left:0%;
+    background-color:
+#C10000;}
+  	66% {left:-100%;
+    background-color: #163482;}
+  	95% {left:-100%;
+    background-color: yellow;}
+    100%{background-color: pink;}
+
+  }
+
+
+@keyframes slide01 {
+	0% {left:0%;}
+	23% {left:0%;}
+	25% {left:-100%;}
+	48% {left:-100%;}
+	50% {left:-200%;}
+	73% {left:-200%;}
+	75% {left:-300%;}
+	98% {left:-300%;}
+	100% {left:0%;}
+}
+@keyframes slide02 {
+	0% {left:0%;}
+	23% {left:0%;}
+	25% {left:-100%;}
+	48% {left:-100%;}
+	50% {left:-200%;}
+	73% {left:-200%;}
+	75% {left:100%;}
+	98% {left:100%;}
+	100% {left:0%;}
+}
+@keyframes slide03 {
+	0% {left:0%;}
+	23% {left:0%;}
+	25% {left:-100%;}
+	48% {left:-100%;}
+	50% {left:200%;}
+	73% {left:200%;}
+	75% {left:100%;}
+	98% {left:100%;}
+	100% {left:0%;}
+}
+@keyframes slide04 {
+	0% {left:0%;}
+	23% {left:0%;}
+	25% {left:300%;}
+	48% {left:300%;}
+	50% {left:200%;}
+	73% {left:200%;}
+	75% {left:100%;}
+	98% {left:100%;}
+	100% {left:0%;}
+}
